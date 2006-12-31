@@ -7,7 +7,7 @@ Compass::Bearing - Convert angle to text bearing (aka Heading)
 =head1 SYNOPSIS
 
   use Compass::Bearing;
-  my $obj = Compass::Bearing->new(16);
+  my $obj = Compass::Bearing->new();
   print "Bearing=", $obj->bearing(45), "\n";
 
 =head1 DESCRIPTION
@@ -18,7 +18,7 @@ use strict;
 use vars qw($VERSION);
 use Geo::Functions qw{deg_rad round};
 
-$VERSION = sprintf("%d.%02d", q{Revision: 0.01} =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q{Revision: 0.02} =~ /(\d+)\.(\d+)/);
 
 =head1 CONSTRUCTOR
 
