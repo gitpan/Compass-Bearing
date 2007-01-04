@@ -2,13 +2,14 @@ package Compass::Bearing;
 
 =head1 NAME
 
-Compass::Bearing - Convert angle to text bearing (aka Heading)
+Compass::Bearing - Convert angle to text bearing (aka heading)
 
 =head1 SYNOPSIS
 
   use Compass::Bearing;
   my $obj = Compass::Bearing->new();
-  print "Bearing=", $obj->bearing(45), "\n";
+  print "Bearing: $_ deg => ", $obj->bearing($_), "\n" foreach (12,45,78,133);
+  print "Compass: ", join(":", $obj->data),"\n";
 
 =head1 DESCRIPTION
 
@@ -18,7 +19,7 @@ use strict;
 use vars qw($VERSION);
 use Geo::Functions qw{deg_rad round};
 
-$VERSION = sprintf("%d.%02d", q{Revision: 0.02} =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q{Revision: 0.03} =~ /(\d+)\.(\d+)/);
 
 =head1 CONSTRUCTOR
 
@@ -81,12 +82,12 @@ sub bearing_rad {
 
 =head2 set
 
-Method sets of returns key for the bearing data structure.
+Method sets and returns key for the bearing text data structure.
 
   my $key=$self->set;
   my $key=$self->set(1);
-  my $key=$self->set(2); #default value
-  my $key=$self->set(3);
+  my $key=$self->set(2);
+  my $key=$self->set(3); #default value
 
 =cut
 

@@ -7,7 +7,7 @@ example.pl - Example for Compass::Bearing
 =cut
 
 use strict;
-use blib;
+use lib qw{./lib ../lib};
 use Compass::Bearing;
 
 my $obj=Compass::Bearing->new();
