@@ -19,7 +19,7 @@ use strict;
 use vars qw($VERSION);
 use Geo::Functions qw{deg_rad round};
 
-$VERSION = sprintf("%d.%02d", q{Revision: 0.03} =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q{Revision: 0.04} =~ /(\d+)\.(\d+)/);
 
 =head1 CONSTRUCTOR
 
@@ -132,13 +132,9 @@ sub dataraw {
 
 __END__
 
-=head1 TODO
-
 =head1 BUGS
 
 Please send to the geo-perl email list.
-
-=head1 LIMITS
 
 =head1 AUTHOR
 
@@ -149,5 +145,3 @@ Michael R. Davis qw/perl michaelrdavis com/
 Copyright (c) 2006 Michael R. Davis (mrdvt92)
 
 This library is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
-
-=head1 SEE ALSO
