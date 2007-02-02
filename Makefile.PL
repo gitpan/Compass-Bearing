@@ -6,6 +6,7 @@ WriteMakefile(
                  strict            => 0,
                  vars              => 0,
                  Geo::Functions    => 0.03, 
+                 GD::Graph::Polar  => 0.09, 
                },
                ($] >= 5.005 ? 
                  (

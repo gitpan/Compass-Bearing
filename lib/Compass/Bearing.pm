@@ -19,7 +19,7 @@ use strict;
 use vars qw($VERSION);
 use Geo::Functions qw{deg_rad round};
 
-$VERSION = sprintf("%d.%02d", q{Revision: 0.04} =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%02d", q{Revision: 0.05} =~ /(\d+)\.(\d+)/);
 
 =head1 CONSTRUCTOR
 

@@ -1,9 +1,13 @@
+bin/example-plot-1-digit.png
+bin/example-plot-2-digit.png
+bin/example-plot-3-digit.png
+bin/example-plot.pl
 bin/example.pl
 CHANGES
 lib/Compass/Bearing.pm
 LICENSE
 Makefile.PL
 MANIFEST			This list of files
+META.yml			Module meta-data (added by MakeMaker)
 README
 t/base.t
-META.yml                                 Module meta-data (added by MakeMaker)
