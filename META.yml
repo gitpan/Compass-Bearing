@@ -1,14 +1,15 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Compass-Bearing
-version:      0.05
-version_from: lib/Compass/Bearing.pm
-installdirs:  site
-requires:
+--- #YAML:1.0
+name:                Compass-Bearing
+version:             0.07
+abstract:            Convert angle to text bearing (aka heading)
+license:             ~
+author:              ~
+generated_by:        ExtUtils::MakeMaker version 6.42
+distribution_type:   module
+requires:     
     GD::Graph::Polar:              0.09
     Geo::Functions:                0.03
-    strict:                        0
-    vars:                          0
-
-distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.17
+    Package::New:                  0
+meta-spec:
+    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
+    version: 1.3
